@@ -1,0 +1,33 @@
+#Main menu
+menu.connect=Connect
+menu.quit=Quit
+menu.options=Options
+menu.singleplayer=Solo
+
+#Vip
+vip.viponly=Vip Only
+
+#CreativeTabs
+itemGroup.tyvaliamodtab=Tyvalia Mod Tab
+
+#Driver License
+item.driver_license_empty.name=Driver License (Empty)
+item.driver_license_car.name=Driver License (Car)
+item.driver_license_motorcycle.name=Driver License (Motorcycle)
+item.driver_license_truck.name=Driver License (Truck)
+item.driver_license_car+motorcycle.name=Driver License (Car + Motorcycle)
+item.driver_license_car+truck.name=Driver License (Car + Truck)
+item.driver_license_motorcycle+truck.name=Driver License (Motocycle + Truck)
+
+#Weapon License
+item.weapon_license_empty.name=Weapon License (Empty)
+item.weapon_license_valid.name=Weapon License (Valid)
+item.weapon_license_unvalid.name=Weapon License (Unvalid)
+
+#Jobs
+jobs.unemployed=Unemployed (No Job)
+
+#Drugs
+tile.weed_plant.name=Weed Plant
+item.weed.name=Weed
+item.weed_seed.name=Weed Seed

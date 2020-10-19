@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "tyvaliamod:blocks/weed_plant"
+  }
+}

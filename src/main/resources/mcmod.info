@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tyvaliamod",
+  "name": "Tyvalia Mod",
+  "description": "Tyvalia Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Charlito33"],
+  "credits": "Charlito33 for Making the mod, ",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
