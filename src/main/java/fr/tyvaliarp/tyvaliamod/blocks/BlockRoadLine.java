@@ -1,5 +1,7 @@
 package fr.tyvaliarp.tyvaliamod.blocks;
 
+import fr.tyvaliarp.tyvaliamod.TyvaliaMod;
+import fr.tyvaliarp.tyvaliamod.init.ModBlocks;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -12,8 +14,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class BlockRoadLine extends BlockHorizontal {
-    protected BlockRoadLine() {
+    public BlockRoadLine() {
         super(Material.ROCK);
+        setRegistryName("road_line").setUnlocalizedName("road_line");
+        setCreativeTab(TyvaliaMod.modTab);
+
+        ModBlocks.INSTANCE.getBlocks().add(this);
     }
 
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {

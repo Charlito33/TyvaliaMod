@@ -1,5 +1,6 @@
 package fr.tyvaliarp.tyvaliamod.init;
 
+import fr.tyvaliarp.tyvaliamod.blocks.BlockRoadLine;
 import fr.tyvaliarp.tyvaliamod.blocks.BlockWeedPlant;
 import fr.tyvaliarp.tyvaliamod.utils.ModBlock;
 import fr.tyvaliarp.tyvaliamod.utils.References;
@@ -29,7 +30,7 @@ public class ModBlocks {
 
         weed_plant = new BlockWeedPlant();
         road = new ModBlock("road", Material.ROCK);
-        road_line = new ModBlock("road_line", Material.ROCK);
+        road_line = new BlockRoadLine();
 
         for (Block block : blocks) {
             ItemBlock ib = new ItemBlock(block);
@@ -43,6 +44,8 @@ public class ModBlocks {
         for (Block b : blocks) {
             registerModel(b);
         }
+
+        registerModel(road_line);
     }
 
     public void registerModel(Block block) {
