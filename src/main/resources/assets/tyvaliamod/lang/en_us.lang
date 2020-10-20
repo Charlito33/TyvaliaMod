@@ -31,3 +31,7 @@ jobs.unemployed=Unemployed (No Job)
 tile.weed_plant.name=Weed Plant
 item.weed.name=Weed
 item.weed_seed.name=Weed Seed
+
+#Blocks
+tile.road.name=Road
+tile.road_line.name=Road Line

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tyvaliamod:road_line"
+    },
+    "facing=south": {
+      "model": "tyvaliamod:road_line", "y": 180
+    },
+    "facing=west":  {
+      "model": "tyvaliamod:road_line", "y": 270
+    },
+    "facing=east":  {
+      "model": "tyvaliamod:road_line", "y": 90
+    }
+  }
+}

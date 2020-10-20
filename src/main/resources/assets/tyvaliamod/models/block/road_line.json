@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "tyvaliamod:blocks/road_line",
+    "front": "tyvaliamod:blocks/road_line",
+    "side": "tyvaliamod:blocks/road"
+  }
+}
