@@ -33,7 +33,7 @@ public class TyvaliaMod {
     public static CommonProxy proxy;
 
     public static final CreativeTabs modTab = new ModTab();
-    public static final boolean DEBUG = true;
+    public static final boolean DEBUG = false;
 
     public static SimpleNetworkWrapper network;
 

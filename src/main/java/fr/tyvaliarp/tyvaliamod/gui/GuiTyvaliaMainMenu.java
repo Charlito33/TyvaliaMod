@@ -1,6 +1,7 @@
 package fr.tyvaliarp.tyvaliamod.gui;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import fr.tyvaliarp.tyvaliamod.TyvaliaMod;
 import fr.tyvaliarp.tyvaliamod.gui.buttons.GuiButtonDiscord;
 import fr.tyvaliarp.tyvaliamod.gui.buttons.GuiButtonWebsite;
 import fr.tyvaliarp.tyvaliamod.proxy.ClientProxy;
@@ -199,7 +200,10 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
     private void addSingleplayerMultiplayerButtons(int y, int spacing) {
         this.buttonList.add(new GuiButton(1, this.width / 2 - 50, y, 100, 20, I18n.format("menu.singleplayer")));
 
-        this.buttonList.add(new GuiButton(2, this.width / 2 - 100, y + spacing * 1, I18n.format("menu.multiplayer")));
+        if (TyvaliaMod.DEBUG) {
+            this.buttonList.add(new GuiButton(2, this.width / 2 - 100, y + spacing * 1, I18n.format("menu.multiplayer")));
+        }
+
         //this.buttonList.add(modButton = new GuiButton(6, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 2, 98, 20, I18n.format("fml.menu.mods")));
 
         this.buttonList.add(new GuiButton(20, this.width / 2 - 50, y + spacing * 1, 100, 20, I18n.format("menu.connect")));
