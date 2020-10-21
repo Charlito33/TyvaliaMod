@@ -45,7 +45,6 @@ public class BlockWeedPlant extends BlockCrops {
 
     public BlockWeedPlant() {
         setRegistryName("weed_plant").setUnlocalizedName("weed_plant");
-        setCreativeTab(TyvaliaMod.modTab);
 
         ModBlocks.INSTANCE.getBlocks().add(this);
     }

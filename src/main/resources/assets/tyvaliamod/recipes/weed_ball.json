@@ -1,0 +1,20 @@
+{
+  "result": {
+    "item": "tyvaliamod:phone",
+    "data": 1
+  },
+  "pattern": [
+    "k",
+    "w"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "k": {
+      "ore": "knife",
+      "type": "forge:ore_dict"
+    },
+    "w": {
+      "item": "tyvaliamod:weed"
+    }
+  }
+}

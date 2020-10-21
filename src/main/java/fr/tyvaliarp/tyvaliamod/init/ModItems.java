@@ -1,6 +1,7 @@
 package fr.tyvaliarp.tyvaliamod.init;
 
 import fr.tyvaliarp.tyvaliamod.food.FoodWeed;
+import fr.tyvaliarp.tyvaliamod.items.ItemKnife;
 import fr.tyvaliarp.tyvaliamod.plants.ItemWeedSeed;
 import fr.tyvaliarp.tyvaliamod.utils.ModItem;
 import fr.tyvaliarp.tyvaliamod.utils.ModMetaItem;
@@ -22,8 +23,8 @@ public class ModItems {
     private List<Item> items;
     private List<ModMetaItem> metaItems;
 
-    public static Item identity_card, weed, weed_seed;
-    public static ModMetaItem driver_license, weapon_license, phone, bill;
+    public static Item identity_card, weed, weed_seed, knife, weed_ball, weed_smoke; //Normal Items
+    public static Item driver_license, weapon_license, phone, bill; //Meta Items
 
     public static IPlantable weedIPlantable;
 
@@ -33,14 +34,17 @@ public class ModItems {
 
         driver_license = new ModMetaItem("driver_license", new String[]{"empty", "car", "motorcycle", "truck", "car+motorcycle", "car+truck", "motorcycle+truck"});
         weapon_license = new ModMetaItem("weapon_license", new String[]{"empty", "valid", "unvalid"});
-        phone = new ModMetaItem("phone", new String[]{"prepaid", "old", "i8", "xr", "note10"});
+        phone = new ModMetaItem("phone", new String[]{"prepaid", "old", "i8", "xr", "note10"}).setMaxStackSize(1);
         bill = new ModMetaItem("bill", new String[]{"5", "10", "20", "50", "100", "200", "500"});
 
         identity_card = new ModItem("identity_card");
+        weed_ball = new ModItem("weed_ball");
+        weed_smoke = new ModItem("weed_smoke");
 
         weed = new FoodWeed();
         weedIPlantable = new ItemWeedSeed();
         weed_seed = (Item)weedIPlantable;
+        knife = new ItemKnife();
     }
 
     @SubscribeEvent

@@ -1,0 +1,57 @@
+#Main menu
+menu.connect=Se connecter
+menu.quit=Quitter
+menu.options=Options
+menu.singleplayer=Solo
+
+#Vip
+vip.viponly=Vip Uniquement
+
+#CreativeTabs
+itemGroup.tyvaliamodtab=Catégorie Tyvalia Mod
+
+#Driver License
+item.driver_license_empty.name=Permis de Conduire (Vide)
+item.driver_license_car.name=Permis de Conduire (Voiture)
+item.driver_license_motorcycle.name=Permis de Conduire (Moto)
+item.driver_license_truck.name=Permis de Conduire (Camion)
+item.driver_license_car+motorcycle.name=Permis de Conduire (Voiture + Moto)
+item.driver_license_car+truck.name=Permis de Conduire (Voiture + Camion)
+item.driver_license_motorcycle+truck.name=Permis de Conduire (Moto + Camion)
+
+#Weapon License
+item.weapon_license_empty.name=Permis Port d'Arme (Vide)
+item.weapon_license_valid.name=Permis Port d'Arme (Valide)
+item.weapon_license_unvalid.name=Permis Port d'Arme (Unvalide)
+
+item.identity_card.name=Carte d'Identité
+
+#Jobs
+jobs.unemployed=Chômeur (Pas de travail)
+
+#Drugs
+tile.weed_plant.name=Plante de Cannabis
+item.weed.name=Cannabis
+item.weed_seed.name=Graines de Cannabis
+
+#Phone
+item.phone_prepaid.name=Téléphone Prépayé
+item.phone_old.name=Vieux Téléphone
+item.phone_i8.name=ISmart 8
+item.phone_xr.name=ISmart XR
+item.phone_note10.name=SaMeSoule Galaxy Note 10
+
+#Bills
+item.bill_5.name=5€
+item.bill_10.name=10€
+item.bill_20.name=20€
+item.bill_50.name=50€
+item.bill_100.name=100€
+item.bill_200.name=200€
+item.bill_500.name=500€
+
+#Blocks
+tile.road.name=Route
+tile.road_line.name=Ligne de Route
+
+item.knife.name=Couteau

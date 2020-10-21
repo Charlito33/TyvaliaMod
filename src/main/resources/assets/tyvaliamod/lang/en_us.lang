@@ -24,6 +24,8 @@ item.weapon_license_empty.name=Weapon License (Empty)
 item.weapon_license_valid.name=Weapon License (Valid)
 item.weapon_license_unvalid.name=Weapon License (Unvalid)
 
+item.identity_card.name=Identity Card
+
 #Jobs
 jobs.unemployed=Unemployed (No Job)
 
@@ -32,6 +34,24 @@ tile.weed_plant.name=Weed Plant
 item.weed.name=Weed
 item.weed_seed.name=Weed Seed
 
+#Phone
+item.phone_prepaid.name=Prepaid Phone
+item.phone_old.name=Old Phone
+item.phone_i8.name=ISmart 8
+item.phone_xr.name=ISmart XR
+item.phone_note10.name=Gala Xy Note 10
+
+#Bills
+item.bill_5.name=5€
+item.bill_10.name=10€
+item.bill_20.name=20€
+item.bill_50.name=50€
+item.bill_100.name=100€
+item.bill_200.name=200€
+item.bill_500.name=500€
+
 #Blocks
 tile.road.name=Road
 tile.road_line.name=Road Line
+
+item.knife.name=Knife
