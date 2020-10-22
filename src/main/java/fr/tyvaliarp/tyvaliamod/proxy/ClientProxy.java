@@ -25,7 +25,7 @@ public class ClientProxy extends CommonProxy {
     public static String username = Minecraft.getMinecraft().getSession().getUsername();
     public static boolean vip = false;
 
-    private static String apiUrl = "http://charlito33.000webhostapp.com/tyvalia-rp/api/vip-check.php";
+    private static String apiUrl = "http://tyvalia-rp.000webhostapp.com/api/vip-check.php";
 
     @Override
     public void preInit() {

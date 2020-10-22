@@ -116,7 +116,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("URL");
+                    URL url = new URL("https://tyvalia-rp.000webhostapp.com/mod/news.txt");
                     InputStream is = url.openStream();
                 } catch (Exception e) {
                     GuiTyvaliaMainMenu.this.scrollingText = "Impossible de lire le texte";
@@ -285,7 +285,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
 
         if (button.id == 22) {
             try {
-                Desktop.getDesktop().browse(new URI("https://tyvalia-rp.fr.nf/"));
+                Desktop.getDesktop().browse(new URI("https://tyvalia-rp.000webhostapp.com/"));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
