@@ -23,7 +23,7 @@ public class ModBlocks {
 
     private List<Block> blocks;
 
-    public static Block weed_plant, road, road_line;
+    public static Block weed_plant, road, road_line, lootbox_ultimate, lootbox_gun, lootbox_car;
 
     public void init() {
         blocks = new ArrayList<>();
@@ -31,6 +31,9 @@ public class ModBlocks {
         weed_plant = new BlockWeedPlant();
         road = new ModBlock("road", Material.ROCK);
         road_line = new BlockRoadLine();
+        lootbox_ultimate = new ModBlock("lootbox_ultimate", Material.IRON);
+        lootbox_gun = new ModBlock("lootbox_gun", Material.IRON);
+        lootbox_car = new ModBlock("lootbox_car", Material.IRON);
 
         for (Block block : blocks) {
             ItemBlock ib = new ItemBlock(block);

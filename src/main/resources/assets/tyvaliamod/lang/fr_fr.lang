@@ -54,4 +54,9 @@ item.bill_500.name=500€
 tile.road.name=Route
 tile.road_line.name=Ligne de Route
 
+#LootBox
+tile.lootbox_ultimate.name=LootBox Ultime
+tile.lootbox_gun.name=LootBox Armes
+tile.lootbox_car.name=LootBox Voitures
+
 item.knife.name=Couteau
