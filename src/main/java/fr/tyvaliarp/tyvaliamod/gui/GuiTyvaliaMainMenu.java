@@ -25,8 +25,10 @@ import org.apache.logging.log4j.Logger;
 import org.lwjgl.opengl.GLContext;
 
 import java.awt.*;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -118,6 +120,8 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
                 try {
                     URL url = new URL("https://tyvalia-rp.000webhostapp.com/mod/news.txt");
                     InputStream is = url.openStream();
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+                    GuiTyvaliaMainMenu.this.scrollingText = reader.readLine();
                 } catch (Exception e) {
                     GuiTyvaliaMainMenu.this.scrollingText = "Impossible de lire le texte";
                 }
