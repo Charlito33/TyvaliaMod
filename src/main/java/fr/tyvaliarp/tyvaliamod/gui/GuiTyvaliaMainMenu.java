@@ -65,7 +65,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
     private int widthCopyright;
     private int widthCopyrightRest;
     private final ServerPinger serverPinger = new ServerPinger();
-    private ServerData server = new ServerData("Tyvalia RP", "tyvalia-rp.mine.gg:10004", false);
+    private ServerData server = new ServerData("Tyvalia RP", "87.98.170.178:25574", false);
     private static final ThreadPoolExecutor EXECUTOR = new ScheduledThreadPoolExecutor(5, (new ThreadFactoryBuilder()).setNameFormat("Server Pinger #%d").setDaemon(true).build());
     private int scrollingTextPosX;
     private String scrollingText;
@@ -118,7 +118,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("https://tyvalia-rp.000webhostapp.com/mod/news.txt");
+                    URL url = new URL("http://tyvalia-rp.fr.nf/api/news.php");
                     InputStream is = url.openStream();
                     BufferedReader reader = new BufferedReader(new InputStreamReader(is));
                     GuiTyvaliaMainMenu.this.scrollingText = reader.readLine();
@@ -281,7 +281,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
 
         if (button.id == 21) {
             try {
-                Desktop.getDesktop().browse(new URI("https://discord.gg/SMXCEMs"));
+                Desktop.getDesktop().browse(new URI("http://tyvalia-rp.fr.nf/links/discord.php"));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
@@ -289,7 +289,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
 
         if (button.id == 22) {
             try {
-                Desktop.getDesktop().browse(new URI("https://tyvalia-rp.000webhostapp.com/"));
+                Desktop.getDesktop().browse(new URI("http://tyvalia-rp.fr.nf/"));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }

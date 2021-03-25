@@ -60,3 +60,5 @@ tile.lootbox_gun.name=Gun LootBox
 tile.lootbox_car.name=Car LootBox
 
 item.knife.name=Knife
+
+tile.atm.name=ATM

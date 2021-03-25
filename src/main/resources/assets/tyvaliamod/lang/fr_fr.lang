@@ -60,3 +60,5 @@ tile.lootbox_gun.name=LootBox Armes
 tile.lootbox_car.name=LootBox Voitures
 
 item.knife.name=Couteau
+
+tile.atm.name=ATM

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tyvaliamod:atm"
+    },
+    "facing=south": {
+      "model": "tyvaliamod:atm", "y": 180
+    },
+    "facing=west":  {
+      "model": "tyvaliamod:atm", "y": 270
+    },
+    "facing=east":  {
+      "model": "tyvaliamod:atm", "y": 90
+    }
+  }
+}

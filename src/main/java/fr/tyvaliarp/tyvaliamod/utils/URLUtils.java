@@ -12,4 +12,6 @@ public class URLUtils {
             return scanner.hasNext() ? scanner.next() : "";
         }
     }
+
+
 }
