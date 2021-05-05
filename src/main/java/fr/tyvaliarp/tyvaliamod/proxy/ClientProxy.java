@@ -20,7 +20,7 @@ public class ClientProxy extends CommonProxy {
     public static String username = Minecraft.getMinecraft().getSession().getUsername();
     public static boolean vip = false;
 
-    private static String apiUrl = "http://tyvalia-rp.fr.nf/api/";
+    private static String apiUrl = "https://tyvalia-rp.fr.nf/api/";
 
     @Override
     public void preInit() {

@@ -118,7 +118,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
             @Override
             public void run() {
                 try {
-                    URL url = new URL("http://tyvalia-rp.fr.nf/api/news.php");
+                    URL url = new URL("https://tyvalia-rp.fr.nf/api/news.php");
                     InputStream is = url.openStream();
                     BufferedReader reader = new BufferedReader(new InputStreamReader(is));
                     GuiTyvaliaMainMenu.this.scrollingText = reader.readLine();
@@ -281,7 +281,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
 
         if (button.id == 21) {
             try {
-                Desktop.getDesktop().browse(new URI("http://tyvalia-rp.fr.nf/links/discord.php"));
+                Desktop.getDesktop().browse(new URI("https://tyvalia-rp.fr.nf/links/discord.php"));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
@@ -289,7 +289,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
 
         if (button.id == 22) {
             try {
-                Desktop.getDesktop().browse(new URI("http://tyvalia-rp.fr.nf/"));
+                Desktop.getDesktop().browse(new URI("https://tyvalia-rp.fr.nf/"));
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
