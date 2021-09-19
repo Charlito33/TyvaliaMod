@@ -62,3 +62,7 @@ tile.lootbox_car.name=LootBox Voitures
 item.knife.name=Couteau
 
 tile.atm.name=ATM
+
+#Items
+item.artifact.name=Artéfact
+item.back.name=Retour

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tyvaliamod:mining_server"
+    },
+    "facing=south": {
+      "model": "tyvaliamod:mining_server", "y": 180
+    },
+    "facing=west":  {
+      "model": "tyvaliamod:mining_server", "y": 270
+    },
+    "facing=east":  {
+      "model": "tyvaliamod:mining_server", "y": 90
+    }
+  }
+}

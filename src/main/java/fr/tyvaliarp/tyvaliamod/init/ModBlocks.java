@@ -1,8 +1,6 @@
 package fr.tyvaliarp.tyvaliamod.init;
 
-import fr.tyvaliarp.tyvaliamod.blocks.BlockATM;
-import fr.tyvaliarp.tyvaliamod.blocks.BlockRoadLine;
-import fr.tyvaliarp.tyvaliamod.blocks.BlockWeedPlant;
+import fr.tyvaliarp.tyvaliamod.blocks.*;
 import fr.tyvaliarp.tyvaliamod.utils.ModBlock;
 import fr.tyvaliarp.tyvaliamod.utils.References;
 import net.minecraft.block.Block;
@@ -24,7 +22,7 @@ public class ModBlocks {
 
     private List<Block> blocks;
 
-    public static Block weed_plant, road, road_line, lootbox_ultimate, lootbox_gun, lootbox_car, atm;
+    public static Block weed_plant, road, road_line, lootbox_ultimate, lootbox_gun, lootbox_car, atm, custom_furnace, mining_server;
 
     public void init() {
         blocks = new ArrayList<>();
@@ -36,6 +34,8 @@ public class ModBlocks {
         lootbox_gun = new ModBlock("lootbox_gun", Material.IRON);
         lootbox_car = new ModBlock("lootbox_car", Material.IRON);
         atm = new BlockATM();
+        custom_furnace = new BlockCustomFurnace();
+        mining_server = new BlockMiningServer();
 
         for (Block block : blocks) {
             ItemBlock ib = new ItemBlock(block);

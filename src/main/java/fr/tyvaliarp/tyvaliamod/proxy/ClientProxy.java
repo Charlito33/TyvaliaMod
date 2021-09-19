@@ -1,12 +1,14 @@
 package fr.tyvaliarp.tyvaliamod.proxy;
 
 import fr.tyvaliarp.tyvaliamod.events.ClientEventHandler;
+import fr.tyvaliarp.tyvaliamod.gui.GuiTyvaliaInGameMenu;
 import fr.tyvaliarp.tyvaliamod.gui.GuiTyvaliaMainMenu;
 import fr.tyvaliarp.tyvaliamod.init.KeyBindings;
 import fr.tyvaliarp.tyvaliamod.init.ModBlocks;
 import fr.tyvaliarp.tyvaliamod.init.ModItems;
 import fr.tyvaliarp.tyvaliamod.utils.URLUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiIngameMenu;
 import net.minecraft.client.gui.GuiMainMenu;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -69,11 +71,14 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public void onOpenGui(GuiOpenEvent event) {
-        if (event.getGui() != null && event.getGui().getClass() == GuiMainMenu.class) {
-            event.setGui(new GuiTyvaliaMainMenu());
+        if (event.getGui() != null) {
+            if (event.getGui().getClass() == GuiMainMenu.class) {
+                event.setGui(new GuiTyvaliaMainMenu());
+            } else if (event.getGui().getClass() == GuiIngameMenu.class) {
+                event.setGui(new GuiTyvaliaInGameMenu());
+            }
         }
     }
-
 
     private Boolean stringToBool(String string) {
         return string.contains("true");

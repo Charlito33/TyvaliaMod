@@ -27,14 +27,14 @@ public class PacketCUpdateJobs implements IMessage{
 
     @Override
     public void fromBytes(ByteBuf buf) {
-        if (this.jobs != null) {
-            this.jobs.setJobs(Arrays.asList(ByteBufUtils.readUTF8String(buf).split(",")));
+        if (jobs != null) {
+            jobs.setJobs(Arrays.asList(ByteBufUtils.readUTF8String(buf).split(",")));
         }
     }
 
     @Override
     public void toBytes(ByteBuf buf) {
-        if (this.jobs != null) {
+        if (jobs != null) {
             String result = "";
 
             for (String job : jobs.getJobs()) {
@@ -47,7 +47,7 @@ public class PacketCUpdateJobs implements IMessage{
     }
 
     public List<String> getJobs() {
-        return this.jobs.getJobs();
+        return jobs.getJobs();
     }
 
     public static class Handler implements IMessageHandler<PacketCUpdateJobs, IMessage> {

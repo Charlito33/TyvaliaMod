@@ -62,3 +62,10 @@ tile.lootbox_car.name=Car LootBox
 item.knife.name=Knife
 
 tile.atm.name=ATM
+tile.custom_furnace.name=Custom Furnace
+tile.mining_server.name=Mining Server
+
+#Items
+item.artifact.name=Artifact
+item.back.name=Retour
+

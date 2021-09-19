@@ -65,7 +65,7 @@ public class GuiTyvaliaMainMenu extends GuiScreen {
     private int widthCopyright;
     private int widthCopyrightRest;
     private final ServerPinger serverPinger = new ServerPinger();
-    private ServerData server = new ServerData("Tyvalia RP", "87.98.170.178:25574", false);
+    private ServerData server = new ServerData("Tyvalia RP", "163.172.126.81:10011", false);
     private static final ThreadPoolExecutor EXECUTOR = new ScheduledThreadPoolExecutor(5, (new ThreadFactoryBuilder()).setNameFormat("Server Pinger #%d").setDaemon(true).build());
     private int scrollingTextPosX;
     private String scrollingText;
