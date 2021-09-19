@@ -23,3 +23,5 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+/httpcomponents-client-5.1-bin/
+/backup/
