@@ -1,3 +1,11 @@
+# Info
+
+The new version of Tyvalia Mod (1.7.10) is private to keep Tyvalia Guard Secure
+
+
+-----
+
+
 # Tyvalia Mod
 
 ### Official Tyvalia RP Mod
